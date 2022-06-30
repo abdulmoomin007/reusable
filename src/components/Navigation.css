@@ -1,0 +1,36 @@
+.nav, .icon {
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    background-color: brown;
+}
+
+.nav li, .icon {
+    color: white;
+    cursor: pointer;
+    padding: 1rem;
+}
+
+.icon {
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .nav {
+        flex-direction: column;
+        display: none;
+        text-align: left;
+    }
+
+    .show {
+        display: block;
+    }
+
+    .icon {
+        display: block;
+        text-align: left;
+    }
+  }
